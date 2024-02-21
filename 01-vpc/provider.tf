@@ -10,7 +10,7 @@ terraform {
 
   backend "s3" {
      bucket = "gopi-vpc"
-     key    = "vpc"
+     key    = "sg"
      region = "us-east-1"
      dynamodb_table = "gopi-vpc-locking"
 
