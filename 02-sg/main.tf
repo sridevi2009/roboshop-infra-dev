@@ -1,5 +1,5 @@
 module "vpn" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_description = "SG for vpn"
@@ -9,7 +9,7 @@ module "vpn" {
 }
 
 module "mongodb" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "mongodb"
@@ -19,7 +19,7 @@ module "mongodb" {
 }
 
 module "redis" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "redis"
@@ -29,7 +29,7 @@ module "redis" {
 }
 
 module "mysql" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "mysql"
@@ -39,7 +39,7 @@ module "mysql" {
 }
 
 module "rabbitmq" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "rabbitmq"
@@ -49,7 +49,7 @@ module "rabbitmq" {
 }
 
 module "catalogue" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "catalogue"
@@ -59,7 +59,7 @@ module "catalogue" {
 }
 
 module "cart" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "cart"
@@ -69,7 +69,7 @@ module "cart" {
 }
 
 module "user" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "user"
@@ -79,7 +79,7 @@ module "user" {
 }
 
 module "shipping" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "shipping"
@@ -89,7 +89,7 @@ module "shipping" {
 }
 
 module "payment" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "payment"
@@ -99,7 +99,7 @@ module "payment" {
 }
 
 module "web" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "web"
@@ -109,7 +109,7 @@ module "web" {
 }
 
 module "app_alb" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "app_alb"
@@ -118,7 +118,7 @@ module "app_alb" {
     #sg_ingress_rules = var.mongodb_sg_ingress_rules
 }
 module "web_alb" {
-    source = "../../terraform-aws-security-group"
+    source = "git::https://github.com/sridevi2009/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name     = "web_alb"
