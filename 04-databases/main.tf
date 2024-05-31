@@ -33,8 +33,8 @@ resource "null_resource" "mongodb" {
     }  
 
     provisioner "file" {
-        source      = "bootstrap.sh"
-        destination = "/tmp/bootstrap.sh"
+      source      = "bootstrap.sh"
+      destination = "/tmp/bootstrap.sh"
     }
 
     provisioner "remote-exec" {
